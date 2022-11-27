@@ -1,0 +1,11 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.bg {
+  composes: section;
+  background-color: aquamarine;
+}

@@ -1,16 +1,17 @@
+import { users } from 'data/users';
+import { User } from 'components/User/User';
+import { UsersList } from './UsersList/Userslist';
+import { Section } from './Section/Section';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <Section>
+        <User user={users[0]} />
+      </Section>
+      <Section title="List of users">
+        <UsersList users={users} />
+      </Section>
+    </>
   );
 };
